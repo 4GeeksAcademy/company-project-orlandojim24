@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexova Talent Registration - Join our talent pool and explore opportunities with leading companies.">
+    <meta name="keywords" content="talent registration, job application, recruitment, Nexova">
+    <meta name="author" content="Nexova">
+    <meta name="robots" content="index, follow">
+    
+    <title>Talent Registration - Nexova | Join Our Talent Pool</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://nexova.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Talent",
+                "item": "https://nexova.com/index.html#talent"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Registration",
+                "item": "https://nexova.com/application.html"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-900 scroll-smooth">
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded">Skip to main content</a>
+    
+    <!-- Header and Navigation -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo / Brand -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1">
+                        Nexova
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1">Home</a>
+                    <a href="index.html#services" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1">Services</a>
+                    <a href="index.html#talent" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1">Talent</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1">Contact</a>
+                </nav>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded p-1" aria-label="Toggle navigation menu" aria-expanded="false" id="mobile-menu-toggle" onclick="document.getElementById('mobile-nav').classList.toggle('hidden'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <!-- Mobile navigation -->
+                <nav class="md:hidden flex flex-col space-y-1 absolute top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg p-4 hidden" id="mobile-nav">
+                    <a href="index.html#home" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-2 block">Home</a>
+                    <a href="index.html#services" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-2 block">Services</a>
+                    <a href="index.html#talent" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-2 block">Talent</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-2 block">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="bg-gradient-to-r from-blue-50 to-indigo-50 py-12 md:py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Join Our Talent Pool
+                </h1>
+                <p class="text-lg text-gray-700">
+                    Register your profile and explore opportunities with leading companies seeking exceptional talent.
+                </p>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="py-12 md:py-20 bg-white">
+            <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Success Message (hidden by default) -->
+                <div id="successMessage" class="hidden mb-8 p-6 bg-green-50 border border-green-200 rounded-lg">
+                    <h2 class="text-xl font-bold text-green-900 mb-4">Thank you for your interest in Nexova!</h2>
+                    <p class="text-green-800 mb-4">We have received your information. Our selection team will review it and contact you if your profile matches any of our current or future opportunities.</p>
+                    <p class="text-green-800 mb-6">In the meantime, follow us on <a href="https://linkedin.com/company/nexova" target="_blank" rel="noopener noreferrer" class="underline hover:text-green-700 font-medium">LinkedIn</a> to stay updated on our vacancies and professional development content.</p>
+                    <a href="index.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                        Back to home
+                    </a>
+                </div>
+
+                <!-- Registration Form -->
+                <form id="talentForm" class="hidden" novalidate>
+                    <fieldset class="mb-8">
+                        <legend class="sr-only">Your Information</legend>
+                        
+                        <!-- Full Name -->
+                        <div class="mb-6">
+                            <label for="fullName" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Full Name <span class="text-red-600">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                autocomplete="name"
+                                aria-describedby="fullNameError"
+                                required 
+                                placeholder="First and Last Name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                            <span id="fullNameError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Email <span class="text-red-600">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                autocomplete="email"
+                                aria-describedby="emailError"
+                                required 
+                                placeholder="name@company.com"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                            <span id="emailError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-6">
+                            <label for="phone" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Phone <span class="text-red-600">*</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                autocomplete="tel"
+                                aria-describedby="phoneError"
+                                required 
+                                placeholder="+34 612 345 678"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                            <span id="phoneError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- Country of Residence -->
+                        <div class="mb-6">
+                            <label for="country" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Country of Residence <span class="text-red-600">*</span>
+                            </label>
+                            <select 
+                                id="country" 
+                                name="country" 
+                                aria-describedby="countryError"
+                                required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                                <option value="">Select your country</option>
+                                <option value="Spain">Spain</option>
+                                <option value="United States">United States</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span id="countryError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- Years of Experience -->
+                        <div class="mb-6">
+                            <label for="experience" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Years of Experience <span class="text-red-600">*</span>
+                            </label>
+                            <input 
+                                type="number" 
+                                id="experience" 
+                                name="experience" 
+                                aria-describedby="experienceError"
+                                required 
+                                min="0" 
+                                max="50" 
+                                placeholder="0"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                            <span id="experienceError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- Sector of Interest -->
+                        <div class="mb-6">
+                            <label for="sector" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Sector of Interest <span class="text-red-600">*</span>
+                            </label>
+                            <select 
+                                id="sector" 
+                                name="sector" 
+                                aria-describedby="sectorError"
+                                required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                                <option value="">Select your sector</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Financial Services">Financial Services</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span id="sectorError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- English Level -->
+                        <div class="mb-6">
+                            <label for="englishLevel" class="block text-sm font-semibold text-gray-900 mb-2">
+                                English Level <span class="text-red-600">*</span>
+                            </label>
+                            <select 
+                                id="englishLevel" 
+                                name="englishLevel" 
+                                aria-describedby="englishLevelError"
+                                required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                                <option value="">Select your English level</option>
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                                <option value="Native">Native</option>
+                            </select>
+                            <span id="englishLevelError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- Availability (Radio Buttons) -->
+                        <div class="mb-6">
+                            <fieldset aria-describedby="availabilityError">
+                                <legend class="block text-sm font-semibold text-gray-900 mb-3">
+                                    Availability <span class="text-red-600">*</span>
+                                </legend>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input 
+                                            type="radio" 
+                                            id="availImmediate" 
+                                            name="availability" 
+                                            value="Immediate" 
+                                            required
+                                            class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-2 focus:ring-blue-500"
+                                        >
+                                        <label for="availImmediate" class="ml-3 text-sm text-gray-700">Immediate</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input 
+                                            type="radio" 
+                                            id="avail1Month" 
+                                            name="availability" 
+                                            value="1 month" 
+                                            required
+                                            class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-2 focus:ring-blue-500"
+                                        >
+                                        <label for="avail1Month" class="ml-3 text-sm text-gray-700">1 month</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input 
+                                            type="radio" 
+                                            id="avail2to3Months" 
+                                            name="availability" 
+                                            value="2-3 months" 
+                                            required
+                                            class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-2 focus:ring-blue-500"
+                                        >
+                                        <label for="avail2to3Months" class="ml-3 text-sm text-gray-700">2-3 months</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input 
+                                            type="radio" 
+                                            id="availExploring" 
+                                            name="availability" 
+                                            value="Just exploring" 
+                                            required
+                                            class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-2 focus:ring-blue-500"
+                                        >
+                                        <label for="availExploring" class="ml-3 text-sm text-gray-700">Just exploring</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <span id="availabilityError" class="text-red-600 text-sm mt-2 hidden"></span>
+                        </div>
+
+                        <!-- LinkedIn Profile -->
+                        <div class="mb-6">
+                            <label for="linkedin" class="block text-sm font-semibold text-gray-900 mb-2">
+                                LinkedIn Profile (optional)
+                            </label>
+                            <input 
+                                type="url" 
+                                id="linkedin" 
+                                name="linkedin" 
+                                autocomplete="url"
+                                aria-describedby="linkedinError"
+                                placeholder="https://linkedin.com/in/yourprofile"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            >
+                            <span id="linkedinError" class="text-red-600 text-sm mt-1 hidden"></span>
+                        </div>
+
+                        <!-- Additional Comments -->
+                        <div class="mb-6">
+                            <label for="comments" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Additional Comments (optional)
+                            </label>
+                            <textarea 
+                                id="comments" 
+                                name="comments" 
+                                aria-describedby="commentsError charCounter"
+                                placeholder="Tell us more about yourself..."
+                                maxlength="500"
+                                rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 resize-vertical"
+                            ></textarea>
+                            <div class="flex justify-between items-center mt-2">
+                                <span id="commentsError" class="text-red-600 text-sm hidden"></span>
+                                <span id="charCounter" class="text-sm text-gray-600">500 characters remaining</span>
+                            </div>
+                        </div>
+
+                        <!-- Data Policy Checkbox -->
+                        <div class="mb-8">
+                            <div class="flex items-start">
+                                <input 
+                                    type="checkbox" 
+                                    id="dataPolicy" 
+                                    name="dataPolicy" 
+                                    aria-describedby="dataPolicyError"
+                                    required 
+                                    class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-2 focus:ring-blue-500 mt-1"
+                                >
+                                <label for="dataPolicy" class="ml-3 text-sm text-gray-700">
+                                    I accept the <a href="#" class="text-blue-600 hover:text-blue-700 underline">data processing policy</a> <span class="text-red-600">*</span>
+                                </label>
+                            </div>
+                            <span id="dataPolicyError" class="text-red-600 text-sm mt-2 hidden"></span>
+                        </div>
+                    </fieldset>
+
+                    <!-- Form Buttons -->
+                    <div class="flex gap-4 mb-8">
+                        <button 
+                            type="submit" 
+                            class="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        >
+                            Submit Application
+                        </button>
+                        <button 
+                            type="reset" 
+                            class="flex-1 bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                        >
+                            Clear Form
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Companies Section -->
+                <div class="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+                    <h2 class="text-lg font-bold text-blue-900 mb-2">Looking to hire?</h2>
+                    <p class="text-blue-800">
+                        Are you a company looking for talent? Write to us at 
+                        <a href="mailto:contacto@nexova.com" class="text-blue-600 hover:text-blue-700 font-medium underline">contacto@nexova.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-2">Nexova</h3>
+                    <p class="text-sm text-gray-400">
+                        Building exceptional teams for growing companies since 2011.
+                    </p>
+                </div>
+
+                <div class="text-right">
+                    <p class="text-sm font-semibold text-white mb-3">Follow us</p>
+                    <div class="flex justify-end space-x-4">
+                        <a href="https://linkedin.com/company/nexova" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1" aria-label="LinkedIn">
+                            LinkedIn
+                        </a>
+                        <a href="https://instagram.com/nexova" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-400 transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1" aria-label="Instagram">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-center text-sm text-gray-500">
+                    © 2025 Nexova. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="validation.js"></script>
+</body>
+</html>
