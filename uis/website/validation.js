@@ -30,7 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         phone: {
             validate: function(value) {
-                return value.trim().startsWith('+');
+                const phone = value.trim();
+                if (!/^\+\d{1,3}[ -]?[0-9][0-9 -]*$/.test(phone)) return false;
+                const digitCount = phone.replace(/\D/g, '').length;
+                return digitCount >= 7 && digitCount <= 15;
             },
             error: "Phone must include country code (example: +34 612 345 678)"
         },
@@ -42,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         experience: {
             validate: function(value) {
-                const num = parseInt(value, 10);
+                const num = Number(value);
                 return !isNaN(num) && num >= 0 && num <= 50;
             },
             error: "Years of experience must be between 0 and 50"
@@ -68,7 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
         linkedin: {
             validate: function(value) {
                 if (value === '') return true; // Optional field
-                return value.startsWith('http://') || value.startsWith('https://');
+                try {
+                    const url = new URL(value);
+                    return (url.protocol === 'http:' || url.protocol === 'https:')
+                        && url.hostname.includes('.');
+                } catch (error) {
+                    return false;
+                }
             },
             error: "If you include LinkedIn, it must be a valid URL"
         },
